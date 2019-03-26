@@ -32,6 +32,7 @@ public class UserController {
 
   @GetMapping("/simple/{id}")
   public User findById(@PathVariable Long id) {
+	 System.out.println("status is 200,everything is ok!");
     return this.userRepository.findOne(id);
   }
 
